@@ -1,0 +1,25 @@
+\section{Conclusion}
+This thesis aimed to address the challenge of accurately segmenting water bodies in very high-resolution satellite and aerial images, a task of paramount importance for applications such as environmental monitoring, urban planning, and disaster management. Traditional segmentation methods have often struggled with the complexities and variability of such high-resolution data. To overcome these challenges, we leveraged the advanced DeepLabv3+ model, enhanced with an ensemble of state-of-the-art feature extraction backbones: ResNet50V2, MobileNetV3, and EfficientNetV2.
+By employing a weighted averaging ensemble technique, we successfully integrated the strengths of these three backbones within the encoder part of the DeepLabv3+ model. This ensemble approach significantly improved the feature extraction process, leading to enhanced segmentation performance. Our experimental results demonstrated that the proposed ensemble model achieved approximately 96\% accuracy and a mean Intersection over Union (mean IoU) of 88\%, along with notable improvements in the F1-score, precision, and recall metrics.
+ Extensive experiments validated the effectiveness of the ensemble approach, showcasing significant improvements across multiple evaluation metrics.
+ The improved segmentation model provides a more accurate and efficient tool for environmental monitoring and management.
+Despite these promising results, this research also encountered certain challenges and limitations. The complexity of the ensemble model increased computational requirements, and further optimization could be explored to enhance efficiency. Additionally, the generalizability of the model to different types of remote sensing images and varying environmental conditions could be investigated in future work.
+
+
+
+
+\section{Future Work}
+While the proposed methodology for water bodies segmentation using DeepLabV3+ with a weighted averaging ensemble method has shown promising results, there are several avenues for future research and improvement:
+\begin{enumerate}
+ \item \textbf{Model Optimization: }Future work could focus on optimizing the ensemble model to reduce its computational complexity and improve efficiency. Techniques such as model pruning, quantization, and knowledge distillation could be employed to decrease the model size and increase inference speed without sacrificing accuracy.
+    \item \textbf{Real-Time Implementation : }One of the key future directions is optimizing the model for real-time applications. This involves reducing the computational complexity and improving the processing speed without significantly compromising the accuracy of segmentation.
+    \item \textbf{Semi-Supervised and Unsupervised Learning : }Given the challenges associated with obtaining large amounts of annotated water bodies data, exploring semi-supervised and unsupervised learning techniques could be beneficial. These methods can leverage unlabelled data to improve model performance and robustness.
+    \item \textbf{Expansion of Dataset : }Expanding the dataset to include a wider variety of water bodies scenarios, geographical locations, and environmental conditions will enhance the model's generalizability. Incorporating data from different seasons and weather conditions can further improve the model's ability to handle diverse real-world situations.
+    \item \textbf{Integration with Other Data Sources : }Combining satellite imagery with other data sources such as social media feeds, weather forecasts, and IoT sensors could provide a more comprehensive prediction system. Multimodel data fusion techniques can be investigated to integrate these diverse data sources effectively.
+    \item \textbf{Evaluation of Model Robustness : }Conducting extensive evaluations to assess the robustness of the model under various conditions, including extreme weather events and low-quality satelite imagery, can help identify potential weaknesses and areas for improvement.
+    \item \textbf{Collaborative Research : } Engaging in collaborative research with governmental agencies, non-profit organizations, and other academic institutions can provide access to additional resources, data, and expertise. This collaboration can facilitate the development of more comprehensive and impactful solutions.
+    
+\end{enumerate}
+    
+
+

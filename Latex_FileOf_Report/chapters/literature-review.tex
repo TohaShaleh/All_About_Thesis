@@ -1,0 +1,42 @@
+\section{Introduction}
+Water bodies segmentation is a critical component in disaster management and mitigation, providing essential information for emergency response and urban planning. The advent of deep learning has significantly advanced the field, offering more accurate and efficient methods for water bodies detection and segmentation. This literature review explores the evolution of water bodies segmentation techniques, the impact of deep learning, and the integration of multi-source data to enhance model performance.\\
+In this chapter, we will go through a comprehensive review of the recent research works in the field of water bodies segmentation, discuss their contribution and limitations with a comparative perspective.
+
+
+\section{Related Literature Review}
+
+The advent of deep learning revolutionized segmentation by leveraging neural networks, particularly Convolutional Neural Networks (CNNs), to automatically learn hierarchical features from data. These methods significantly outperformed traditional and machine learning approaches.Various researchers have
+contributed novel approaches to address the challenges in this field.\\
+
+L. Meng et al. \cite{intro4} proposed a method that a flood mapping model using HISEA-1 SAR imagery with an enhanced DeepLabv3+ framework. It employs MobileNetv2, smaller ASPP dilation rates, and extra upsampling layers, achieving superior accuracy and outperforming U-Net, SegNet, and standard DeepLabv3+. Applied to 2021 floods in Henan and New Orleans, it showed significant inundation detection.The study highlights SAR's potential in disaster monitoring and anticipates more low-cost SAR satellites for improved emergency response.
+
+C. Sazara et al. \cite{rel1} proposes novel flood image classification methods using VGG-16 and logistic regression, achieving high performance. Flood area segmentation methods were compared, showing promising results for both superpixel-based and FCN approaches. FCN has room for improvement with more labeled data. Future work includes testing more advanced segmentation networks, extracting floodwater information like severity and depth, and enhancing the model for water reflection cases.
+
+In \cite{rel2}, The study proposes an image-based method using passive monitoring cameras. It detects abnormal water level fluctuations, providing accurate monitoring images and water level data for disaster prevention in small urban areas. This approach supplements the current methods relying on in situ and remote sensing data, enhancing timely decision-making for reducing flood disasters.
+
+
+In \cite{rel3}, The study focuses on robust water detection for UGV autonomous navigation, as traversing through deep water can damage UGV electronics and disrupt military missions. Previous work detected water bodies at mid to far range using sky reflections but faced challenges at close range. The study explores detecting water based on color variations from leading to trailing edges, using saturation and brightness changes. Software was developed to identify candidate water regions with low texture, evaluate color changes, and apply ellipse fitting for final water detection. This approach effectively identifies water bodies, aiding UGV navigation and mission safety.
+
+In \cite{rel4}, The study presents an image segmentation method for aerial images, demonstrating its effectiveness in hydrological modeling. Although there are some errors, the results are comparable to hand-labeled data. The approach is general and can be improved further by considering shadows and increasing the number of classes for peak flow estimation.
+
+In \cite{rel5}, The article introduces an Artificial Neural Network (ANN) approach for flash flood sensing using a custom-designed sensor with ultrasonic rangefinder and infrared temperature sensors. ANNs accurately estimate temperature deviations affecting sound speed, outperforming other models. The method enables real-time water level monitoring in streets with high precision and robustness. Future work will explore rain detection using ultrasonic reflections and water presence detection for fault identification purposes. The approach significantly reduces power usage and bandwidth in wireless sensor networks.
+    
+In \cite{rel6}, The paper introduces a novel approach for detection of over water, focusing on visual features not previously explored in the literature. The method uses a probabilistic model to determine the flood region's position in images by analyzing color, contrast, entropy, and their dynamic changes across frames. Unlike complex feature extraction methods, this approach allows for fast processing, suitable for real-time detection and video retrieval in news content. Experimental results demonstrate the method's applicability.
+
+In \cite{rel7}, The paper applies the Mask-R-CNN algorithm to detect and segment floodwater in urban, suburban, and natural scenes with high accuracy. The model achieves a good accuracy in floodwater detection as well as in segmentation. However, the coarse pixel resolution of the segmentation results is noted as an artifact. Future studies will explore floodwater depth prediction, improve detection speed, and address water reflection challenges to enhance segmentation accuracy.
+
+
+
+In \cite{rel8}, The paper presents a model for water detection based on dynamic texture, enabling safe robot navigation in natural environments. The method utilizes entropy measurements from optical flow trajectories to detect water regions, even in less rippled areas. Future work will explore probabilistic models, spatio-temporal smoothing, and tracker stabilization techniques to enhance accuracy and robustness.
+
+In \cite{rel10}, The study estimates water extent using simple color segmentation and depth analysis on crowd-sourced random images. This method provides valuable information for providing help to flood-affected areas by approximating the percentage of submerged area and floodwater volume from the images. Future work aims to enhance accuracy by considering additional factors such as vehicles and human body parts relative to the water level to calculate the flood extent.
+
+The paper \cite{rel11} focuses on the increasing frequency and impact of water level, emphasizing the need for effective mitigation strategies. It presents a flood segmentation and visualization approach using the U-Net architecture with Sentinel-1 SAR satellite imagery. U-Net captures relevant features in SAR images, and the method includes data loading, preprocessing, flood inference, and visualization. The Sen1Floods11 dataset is used for training and validation. This study demonstrates the potential of deep learning for flood prediction and mapping.
+
+
+The paper \cite{rel12} highlights the inadequacy of ground-based segmentation models for aerial disaster imagery, especially during events like hurricanes. It evaluates real-time and non-real-time models on the FloodNet dataset from Hurricane Harvey, finding UNet-MobileNetV3 achieves 59.3\% mIoU and PSPNet 79.7\% mIoU. The study underscores the trade-off between accuracy and efficiency and the need for specialized aerial segmentation models for effective emergency response.
+
+
+
+\section{Conclusion}
+This chapter provides a comprehensive review of related works in the field of water bodies segmentation. Water segmentation reveals a transformative shift from traditional methods to deep learning approaches, particularly Convolutional Neural Networks (CNNs), which have demonstrated superior performance in accurately delineating extents. Integration of multi-source data, including optical, Synthetic Aperture Radar (SAR), and topographic information, has further enhanced segmentation accuracy by capturing diverse environmental characteristics. Despite notable advancements, challenges such as limited annotated data and computational constraints persist, necessitating innovative solutions for data collection and model refinement. The convergence of machine learning and remote sensing technologies offers promising avenues for improving water detection and mapping in real-time scenarios. Future research should focus on developing hybrid models that leverage the strengths of both traditional and deep learning techniques to address the complexities.
